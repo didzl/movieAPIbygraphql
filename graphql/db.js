@@ -55,3 +55,7 @@ export const people = [
     const filteredPeople = people.filter(person => person.id === String(id));
     return filteredPeople[0];
   };
+
+  export const deleteMovie = (id) =>{
+      const cleanedMovies = movies.filter(movie => movie.id !== String(id));
+  }
